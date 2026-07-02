@@ -332,6 +332,8 @@ body {
     text-align: center;
     transition: all 0.3s;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .plan:hover {
@@ -388,6 +390,7 @@ body {
     list-style: none;
     text-align: left;
     margin-bottom: 25px;
+    flex-grow: 1;
 }
 
 .plan li {
@@ -412,6 +415,7 @@ body {
     font-weight: 700;
     cursor: pointer;
     transition: all 0.2s;
+    margin-top: auto;
 }
 
 .btn-buy:hover {
