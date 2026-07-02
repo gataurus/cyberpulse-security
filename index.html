@@ -3,101 +3,427 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Security PRO — Защита WordPress</title>
+    <title>Cyber Security PRO — Защита WordPress от ботов и атак</title>
+    <meta name="description" content="Комплексная защита WordPress: блокировка ботов, брутфорс-атак, AI-скрапинга, DDoS. Поведенческий анализ, 2FA, гео-блокировка, облачные бэкапы.">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="512x512" href="icon-512x512.png">
     <meta property="og:image" content="icon-512x512.png">
+    <meta property="og:title" content="Cyber Security PRO — Защита WordPress">
+    <meta property="og:description" content="Комплексная защита WordPress от ботов, брутфорса, AI-скрапинга и DDoS-атак.">
     
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="hero">
-        <div class="hero-content">
-            <div class="logo">🛡️ Cyber Security PRO</div>
-            <h1>Максимальная защита WordPress</h1>
-            <p class="subtitle">Поведенческий анализ • Cloudflare Turnstile • 2FA • DDoS • Гео-блокировка • Защита контента</p>
 
-            <div class="pricing">
-                <div class="plan">
-                    <div class="plan-name">PRO Месяц</div>
-                    <div class="plan-price">990₽<span>/мес</span></div>
-                    <ul>
-                        <li>✅ Все PRO-функции</li>
-                        <li>✅ Обновления 30 дней</li>
-                        <li>✅ Техподдержка</li>
-                        <li>✅ 1 сайт</li>
-                    </ul>
-                    <button onclick="buyPlan('monthly')" class="btn-buy">Купить</button>
-                </div>
-                
-                <div class="plan featured">
-                    <div class="plan-badge">🔥 Популярный</div>
-                    <div class="plan-name">PRO Год</div>
-                    <div class="plan-price">4 990₽<span>/год</span></div>
-                    <ul>
-                        <li>✅ Все PRO-функции</li>
-                        <li>✅ Обновления 1 год</li>
-                        <li>✅ Приоритетная поддержка</li>
-                        <li>✅ 3 сайта</li>
-                    </ul>
-                    <button onclick="buyPlan('yearly')" class="btn-buy">Купить</button>
-                </div>
-                
-                <div class="plan">
-                    <div class="plan-name">PRO Навсегда</div>
-                    <div class="plan-price">14 990₽</div>
-                    <ul>
-                        <li>✅ Все PRO-функции</li>
-                        <li>✅ Пожизненные обновления</li>
-                        <li>✅ VIP поддержка</li>
-                        <li>✅ 10 сайтов</li>
-                    </ul>
-                    <button onclick="buyPlan('lifetime')" class="btn-buy">Купить</button>
-                </div>
+<!-- ============================================ -->
+<!-- HERO -->
+<!-- ============================================ -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-badge">🛡️ WordPress Security Plugin</div>
+        <h1 class="hero-title">
+            Защитите свой сайт<br>
+            <span class="text-green">от ботов, атак и взлома</span>
+        </h1>
+        <p class="hero-subtitle">
+            Cyber Security PRO автоматически блокирует сканеры уязвимостей, брутфорс-атаки, 
+            AI-скрапинг и DDoS. Более 30 методов обнаружения угроз. Работает сразу после активации.
+        </p>
+        <div class="hero-buttons">
+            <a href="#pricing" class="btn btn-green">🚀 Купить PRO от 990₽/мес</a>
+            <a href="#comparison" class="btn btn-outline">📊 Сравнить Free vs Pro</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number">30+</span>
+                <span class="stat-label">методов защиты</span>
             </div>
+            <div class="stat">
+                <span class="stat-number">0</span>
+                <span class="stat-label">ложных срабатываний</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">10</span>
+                <span class="stat-label">языков интерфейса</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-            <div class="features">
-                <h2>Что входит в PRO:</h2>
-                <div class="feature-grid">
-                    <div class="feature">🧠 Поведенческий анализ</div>
-                    <div class="feature">☁️ Cloudflare Turnstile</div>
-                    <div class="feature">🔐 2FA (двухфакторная)</div>
-                    <div class="feature">🛡️ DDoS защита</div>
-                    <div class="feature">🌍 Гео-блокировка</div>
-                    <div class="feature">📝 Защита контента</div>
-                    <div class="feature">🤖 AI Scraping защита</div>
-                    <div class="feature">📊 Мониторинг файлов</div>
-                    <div class="feature">💾 Облачные бэкапы</div>
-                    <div class="feature">🔍 Сканер вредоносного кода</div>
-                    <div class="feature">🚫 Расширенная защита SQL</div>
-                    <div class="feature">📧 Еженедельные отчёты</div>
-                </div>
+<!-- ============================================ -->
+<!-- УГРОЗЫ -->
+<!-- ============================================ -->
+<section class="threats">
+    <div class="container">
+        <h2 class="section-title">От каких угроз защищает Cyber Security</h2>
+        <p class="section-subtitle">Ваш сайт атакуют каждый день. Вот что блокирует плагин автоматически.</p>
+        
+        <div class="threats-grid">
+            <div class="threat-card">
+                <div class="threat-icon">🤖</div>
+                <h3>Боты и сканеры</h3>
+                <p>Автоматические программы сканируют сайт на уязвимости. Плагин определяет их по User-Agent, поведению и заголовкам запросов.</p>
+            </div>
+            <div class="threat-card">
+                <div class="threat-icon">🔑</div>
+                <h3>Брутфорс-атаки</h3>
+                <p>Подбор паролей к wp-login.php и XML-RPC. При превышении лимита попыток IP блокируется навсегда автоматически.</p>
+            </div>
+            <div class="threat-card">
+                <div class="threat-icon">🧠</div>
+                <h3>AI-скрапинг</h3>
+                <p>GPTBot, Claude, Perplexity и другие AI-боты собирают ваш контент для обучения моделей. Плагин блокирует их.</p>
+            </div>
+            <div class="threat-card">
+                <div class="threat-icon">☠️</div>
+                <h3>SQL-инъекции</h3>
+                <p>Хакеры пытаются внедрить вредоносный SQL-код через URL и формы. Плагин проверяет все входящие запросы.</p>
+            </div>
+            <div class="threat-card">
+                <div class="threat-icon">📋</div>
+                <h3>Кража контента</h3>
+                <p>Ваши статьи и изображения копируют без спроса. Защита от выделения текста, правого клика и iframe-встраивания.</p>
+            </div>
+            <div class="threat-card">
+                <div class="threat-icon">🌊</div>
+                <h3>DDoS-атаки</h3>
+                <p>Массовые запросы перегружают сервер. Rate Limiting и Anti-Slowloris защищают от флуда на уровне приложения.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- СРАВНЕНИЕ FREE VS PRO -->
+<!-- ============================================ -->
+<section class="comparison" id="comparison">
+    <div class="container">
+        <h2 class="section-title">Сравнение версий</h2>
+        <p class="section-subtitle">Free-версия — мощная базовая защита. PRO добавляет продвинутые функции для максимальной безопасности.</p>
+        
+        <div class="comparison-table-wrap">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Функция</th>
+                        <th class="col-free">🆓 Free</th>
+                        <th class="col-pro">🛡️ PRO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Блокировка ботов (User-Agent, HTTP/1.0)</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Брутфорс-защита (wp-login, XML-RPC)</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Скрытие системных файлов WordPress</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Rate Limiting (флуд-контроль)</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Белый список IP (ручной + авто)</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Бэкапы базы данных (локально)</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Email-уведомления об атаках</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr class="divider">
+                        <td colspan="3">PRO-функции</td>
+                    </tr>
+                    <tr>
+                        <td>🧠 Поведенческий анализ посетителей</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>☁️ Cloudflare Turnstile (умная капча)</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>🔐 Двухфакторная аутентификация (2FA)</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>🛡️ DDoS-защита (продвинутая)</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>🌍 Гео-блокировка по странам</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>📝 Защита контента от копирования</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>🤖 Защита от AI-скрапинга</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>📊 Мониторинг целостности файлов</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>💾 Облачные бэкапы (Google Drive, Яндекс.Диск, Dropbox)</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>🔍 Сканер вредоносного кода</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>🚫 Расширенная защита от SQL-инъекций</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>📧 Еженедельный отчёт безопасности</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>🔌 REST API Rate Limiting</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>💾 Защита файловой системы (.htaccess, wp-config)</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- PRO-ФУНКЦИИ ПОДРОБНО -->
+<!-- ============================================ -->
+<section class="pro-features">
+    <div class="container">
+        <h2 class="section-title">PRO-функции подробно</h2>
+        <p class="section-subtitle">Каждая функция — результат анализа реальных атак на WordPress-сайты.</p>
+        
+        <div class="pro-features-grid">
+            <div class="pro-feature-card">
+                <h3>🧠 Поведенческий анализ</h3>
+                <p>Эвристический анализ поведения посетителей. Обнаруживает ботов, которые маскируются под реальные браузеры: правильный User-Agent, все заголовки — но ведут себя неестественно. Анализирует скорость переходов, последовательность URL, соотношение GET/POST запросов.</p>
             </div>
             
-            <!-- Как активировать -->
-            <div class="how-it-works">
-                <h2>Как активировать PRO:</h2>
-                <div class="steps">
-                    <div class="step">1️⃣ Оплатите тариф</div>
-                    <div class="step">2️⃣ Получите ключ на email</div>
-                    <div class="step">3️⃣ Вставьте ключ в плагине</div>
-                    <div class="step">4️⃣ PRO функции активированы!</div>
-                </div>
+            <div class="pro-feature-card">
+                <h3>☁️ Cloudflare Turnstile</h3>
+                <p>Умная проверка «человек или бот» от Cloudflare. В 90% случаев не показывает капчу реальным людям. Бесплатно до 1 000 000 проверок в месяц. Не требует переноса домена на Cloudflare. Замена простого теста «2+2=?».</p>
+            </div>
+            
+            <div class="pro-feature-card">
+                <h3>🔐 Двухфакторная аутентификация (2FA)</h3>
+                <p>Дополнительный уровень защиты при входе в админку. Поддержка Google Authenticator, Authy, Microsoft Authenticator. Каждый пользователь настраивает 2FA индивидуально. При входе требуется 6-значный код из приложения.</p>
+            </div>
+            
+            <div class="pro-feature-card">
+                <h3>🌍 Гео-блокировка</h3>
+                <p>Блокировка доступа к сайту из указанных стран. Два режима: чёрный список (блокировать выбранные) и белый список (пропускать только выбранные). Возможность редиректа на другой URL. 195 стран в базе.</p>
+            </div>
+            
+            <div class="pro-feature-card">
+                <h3>📝 Защита контента</h3>
+                <p>Защита от кражи контента: запрет выделения текста, правого клика, горячих клавиш (Ctrl+C, Ctrl+U, F12), перетаскивания изображений. Автоматическое добавление ссылки на источник при копировании. Защита от встраивания в iframe.</p>
+            </div>
+            
+            <div class="pro-feature-card">
+                <h3>💾 Облачные бэкапы</h3>
+                <p>Автоматическая загрузка бэкапов в Google Drive, Яндекс.Диск или Dropbox. Отправка на email. Настраиваемое расписание (ежедневно, еженедельно, ежемесячно). Шифрование бэкапов паролем. Возможность восстановления из облака.</p>
+            </div>
+            
+            <div class="pro-feature-card">
+                <h3>🔍 Сканер вредоносного кода</h3>
+                <p>Ежедневная проверка PHP, JS, INC и TXT файлов на вредоносный код. Обнаруживает скрытые файлы, eval-вставки, base64-декодеры. Отправляет уведомления при обнаружении угроз. Возможность белого списка файлов.</p>
+            </div>
+            
+            <div class="pro-feature-card">
+                <h3>🛡️ DDoS-защита</h3>
+                <p>Защита от распределённых атак на уровне приложения (Layer 7). Настраиваемые пороги: окно проверки, максимум запросов, длительность бана. Anti-Slowloris защита от медленных соединений. Глобальный порог запросов в минуту.</p>
             </div>
         </div>
     </div>
-    
-    <!-- Модальное окно для email -->
-    <div id="email-modal" class="modal" style="display:none;">
-        <div class="modal-content">
-            <h2>Введите email для получения ключа</h2>
-            <input type="email" id="email-input" placeholder="your@email.com" required>
-            <p id="email-error" style="color:#ff4040;display:none;">Введите корректный email</p>
-            <button onclick="confirmEmail()" class="btn-buy">Продолжить</button>
-            <button onclick="closeModal()" class="btn-cancel">Отмена</button>
+</section>
+
+<!-- ============================================ -->
+<!-- ТАРИФЫ -->
+<!-- ============================================ -->
+<section class="pricing-section" id="pricing">
+    <div class="container">
+        <h2 class="section-title">Тарифы</h2>
+        <p class="section-subtitle">Оплата через Robokassa. Безопасно. Лицензия приходит на email сразу после оплаты.</p>
+        
+        <div class="pricing">
+            <div class="plan">
+                <div class="plan-name">PRO Месяц</div>
+                <div class="plan-price">990₽<span>/мес</span></div>
+                <p class="plan-desc">Для тех, кто хочет попробовать</p>
+                <ul>
+                    <li>✅ Все PRO-функции</li>
+                    <li>✅ Обновления плагина</li>
+                    <li>✅ Поддержка по email</li>
+                </ul>
+                <button onclick="buyPlan('monthly')" class="btn-buy">Купить</button>
+            </div>
+            
+            <div class="plan featured">
+                <div class="plan-badge">🔥 Популярный</div>
+                <div class="plan-name">PRO Год</div>
+                <div class="plan-price">4 990₽<span>/год</span></div>
+                <p class="plan-desc">Экономия 58%</p>
+                <ul>
+                    <li>✅ Все PRO-функции</li>
+                    <li>✅ Обновления плагина</li>
+                    <li>✅ Поддержка по email</li>
+                    <li>✅ Экономия 6 890₽</li>
+                </ul>
+                <button onclick="buyPlan('yearly')" class="btn-buy">Купить</button>
+            </div>
+            
+            <div class="plan">
+                <div class="plan-name">PRO Навсегда</div>
+                <div class="plan-price">14 990₽</div>
+                <p class="plan-desc">Один раз — навсегда</p>
+                <ul>
+                    <li>✅ Все PRO-функции</li>
+                    <li>✅ Пожизненные обновления</li>
+                    <li>✅ Поддержка по email</li>
+                    <li>✅ Никаких повторных платежей</li>
+                </ul>
+                <button onclick="buyPlan('lifetime')" class="btn-buy">Купить</button>
+            </div>
+        </div>
+        
+        <div class="payment-methods">
+            <span>Принимаем:</span>
+            <span class="payment-icon">💳</span> Банковские карты
+            <span class="payment-icon">📱</span> СБП
         </div>
     </div>
-    
-    <script src="js/payment.js"></script>
+</section>
+
+<!-- ============================================ -->
+<!-- КАК АКТИВИРОВАТЬ -->
+<!-- ============================================ -->
+<section class="how-it-works">
+    <div class="container">
+        <h2 class="section-title">Как активировать PRO</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Оплатите тариф</h3>
+                <p>Выберите подходящий тариф и оплатите через Robokassa</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Получите ключ</h3>
+                <p>Лицензионный ключ придёт на ваш email сразу после оплаты</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Вставьте ключ</h3>
+                <p>В админке WordPress перейдите в Cyber Security и вставьте ключ</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>PRO активирован!</h3>
+                <p>Все PRO-функции разблокируются мгновенно</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- FAQ -->
+<!-- ============================================ -->
+<section class="faq">
+    <div class="container">
+        <h2 class="section-title">Частые вопросы</h2>
+        
+        <div class="faq-item">
+            <h3>Как установить плагин?</h3>
+            <p>Установите бесплатную версию Cyber Security из репозитория WordPress.org. Затем купите PRO-лицензию на этом сайте и активируйте ключ в настройках плагина. PRO-функции разблокируются мгновенно.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Что будет после окончания лицензии?</h3>
+            <p>PRO-функции отключатся, но базовая защита продолжит работать. Ваш сайт не останется без защиты. Все ваши настройки сохранятся.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Можно ли использовать на нескольких сайтах?</h3>
+            <p>Одна лицензия — один сайт. Для нескольких сайтов приобретите отдельные лицензии.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Нужен ли Cloudflare для Turnstile?</h3>
+            <p>Нет. Cloudflare Turnstile работает независимо. Не нужно переносить домен на Cloudflare или менять DNS-серверы. Достаточно зарегистрироваться и получить ключи.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Как восстановить лицензию?</h3>
+            <p>Напишите на cybersecurity.plugin@gmail.com с email, который использовали при покупке. Мы восстановим ваш ключ.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- ФУТЕР -->
+<!-- ============================================ -->
+<footer class="footer">
+    <div class="container">
+        <p>🛡️ Cyber Security PRO — защита вашего WordPress</p>
+        <p>По вопросам: <a href="mailto:cybersecurity.plugin@gmail.com">cybersecurity.plugin@gmail.com</a></p>
+        <p class="copyright">© 2026 Cyber Security. Все права защищены.</p>
+    </div>
+</footer>
+
+<!-- Модальное окно для email -->
+<div id="email-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <h2>Введите email для получения ключа</h2>
+        <p>Лицензионный ключ будет отправлен на этот адрес сразу после оплаты.</p>
+        <input type="email" id="email-input" placeholder="your@email.com" required>
+        <p id="email-error" style="color:#ff4040;display:none;">Введите корректный email</p>
+        <button onclick="confirmEmail()" class="btn-buy">Продолжить</button>
+        <button onclick="closeModal()" class="btn-cancel">Отмена</button>
+    </div>
+</div>
+
+<script src="js/payment.js"></script>
 </body>
 </html>
