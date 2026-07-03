@@ -23,19 +23,20 @@ jobs:
       
     - name: Replace secrets
       run: |
-        if [ -f "api/create-payment.php" ]; then
-          sed -i "s|{{PAYMENT_SERVER_URL}}|${{ secrets.PAYMENT_SERVER_URL }}|g" api/create-payment.php
-          sed -i "s|{{SECRET_TOKEN}}|${{ secrets.SECRET_TOKEN }}|g" api/create-payment.php
-        fi
-        if [ -f "api/verify.php" ]; then
-          sed -i "s|{{LICENSE_SERVER_URL}}|${{ secrets.LICENSE_SERVER_URL }}|g" api/verify.php
-          sed -i "s|{{SECRET_TOKEN}}|${{ secrets.SECRET_TOKEN }}|g" api/verify.php
-        fi
-        if [ -f "api/send-message.php" ]; then
-          sed -i "s|{{MESSAGE_SERVER_URL}}|${{ secrets.MESSAGE_SERVER_URL }}|g" api/send-message.php
-          sed -i "s|{{SECRET_TOKEN}}|${{ secrets.SECRET_TOKEN }}|g" api/send-message.php
-        fi
-        echo "Secrets replaced successfully"
+        echo "=== Replacing secrets ==="
+        ls -la api/
+        echo ""
+        
+        sed -i "s|{{PAYMENT_SERVER_URL}}|${{ secrets.PAYMENT_SERVER_URL }}|g" api/create-payment.php 2>/dev/null || echo "create-payment.php not found"
+        sed -i "s|{{SECRET_TOKEN}}|${{ secrets.SECRET_TOKEN }}|g" api/create-payment.php 2>/dev/null || true
+        
+        sed -i "s|{{LICENSE_SERVER_URL}}|${{ secrets.LICENSE_SERVER_URL }}|g" api/verify.php 2>/dev/null || echo "verify.php not found"
+        sed -i "s|{{SECRET_TOKEN}}|${{ secrets.SECRET_TOKEN }}|g" api/verify.php 2>/dev/null || true
+        
+        sed -i "s|{{MESSAGE_SERVER_URL}}|${{ secrets.MESSAGE_SERVER_URL }}|g" api/send-message.php 2>/dev/null || echo "send-message.php not found"
+        sed -i "s|{{SECRET_TOKEN}}|${{ secrets.SECRET_TOKEN }}|g" api/send-message.php 2>/dev/null || true
+        
+        echo "=== Done ==="
         
     - name: Setup Pages
       uses: actions/configure-pages@v4
