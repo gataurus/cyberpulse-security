@@ -154,6 +154,138 @@ body {
 .faq-item a { color: var(--green); text-decoration: underline; }
 
 /* ============================================ */
+/* CTA FINAL */
+/* ============================================ */
+.cta-final {
+    padding: 80px 0;
+    background: linear-gradient(180deg, rgba(0, 224, 72, 0.02) 0%, transparent 40%);
+}
+
+.cta-final-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.cta-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 35px 30px;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-card:hover {
+    border-color: var(--green);
+    box-shadow: 0 0 30px var(--green-glow);
+    transform: translateY(-2px);
+}
+
+.cta-card-guarantee {
+    border-color: rgba(0, 224, 72, 0.2);
+}
+
+.cta-card-action {
+    background: linear-gradient(135deg, rgba(0, 224, 72, 0.05), rgba(0, 192, 232, 0.03));
+    border-color: rgba(0, 224, 72, 0.3);
+}
+
+.cta-card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.cta-card h3 {
+    font-size: 1.15rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.cta-stats-list {
+    list-style: none;
+    flex-grow: 1;
+}
+
+.cta-stats-list li {
+    padding: 10px 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--border-light);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cta-stats-list li:last-child {
+    border-bottom: none;
+}
+
+.cta-stat-num {
+    color: var(--green);
+    font-weight: 700;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.cta-guarantee-list {
+    list-style: none;
+    flex-grow: 1;
+}
+
+.cta-guarantee-list li {
+    padding: 10px 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.cta-guarantee-list li:last-child {
+    border-bottom: none;
+}
+
+.cta-card-action p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.cta-buttons .btn {
+    text-align: center;
+}
+
+.cta-contact {
+    margin-top: auto;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.cta-contact a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+.cta-contact a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .cta-final-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================ */
 /* FOOTER */
 /* ============================================ */
 .footer { padding: 40px 0; text-align: center; border-top: 1px solid var(--border); color: var(--text-secondary); font-size: 0.85rem; }
