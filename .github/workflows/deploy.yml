@@ -31,6 +31,10 @@ jobs:
           sed -i "s|{{LICENSE_SERVER_URL}}|${{ secrets.LICENSE_SERVER_URL }}|g" api/verify.php
           sed -i "s|{{SECRET_TOKEN}}|${{ secrets.SECRET_TOKEN }}|g" api/verify.php
         fi
+        if [ -f "api/send-message.php" ]; then
+          sed -i "s|{{MESSAGE_SERVER_URL}}|${{ secrets.MESSAGE_SERVER_URL }}|g" api/send-message.php
+          sed -i "s|{{SECRET_TOKEN}}|${{ secrets.SECRET_TOKEN }}|g" api/send-message.php
+        fi
         
     - name: Setup Pages
       uses: actions/configure-pages@v4
