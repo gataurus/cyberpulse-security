@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="contact_title">Свяжитесь с нами | Cyber Security PRO</title>
+    <title data-i18n="contact_title">Контакты | Cyber Security PRO</title>
     <link rel="stylesheet" href="../../css/style.css">
     <script src="../../js/translations.js"></script>
     <style>
@@ -16,6 +16,7 @@
             width: 100%; padding: 12px; background: var(--bg-card); 
             border: 2px solid var(--border); border-radius: var(--radius-sm); 
             color: var(--text); font-size: 0.95rem; font-family: var(--font);
+            box-sizing: border-box;
         }
         .form-group input:focus, .form-group textarea:focus { border-color: var(--green); outline: none; }
         .form-group textarea { min-height: 140px; resize: vertical; }
@@ -46,6 +47,14 @@
         .lang-option { display: flex; align-items: center; gap: 10px; padding: 10px 16px; cursor: pointer; color: var(--text-secondary); font-size: 0.85rem; transition: all 0.15s; }
         .lang-option:hover { background: rgba(0, 224, 72, 0.05); color: var(--text); }
         .lang-option.active { color: var(--green); font-weight: 700; background: rgba(0, 224, 72, 0.08); }
+        .response-time { 
+            display: flex; align-items: center; gap: 8px; 
+            background: rgba(0, 192, 232, 0.06); border: 1px solid rgba(0, 192, 232, 0.15);
+            border-radius: var(--radius-sm); padding: 12px 16px; margin-bottom: 24px;
+            font-size: 0.85rem; color: var(--text-secondary);
+        }
+        .response-time-icon { font-size: 1.2rem; }
+        .response-time strong { color: var(--blue); }
     </style>
 </head>
 <body>
@@ -53,8 +62,13 @@
 <div id="lang-switcher" class="lang-switcher"></div>
 
 <div class="doc-page">
-    <h1 data-i18n="contact_title">Свяжитесь с нами</h1>
-    <p data-i18n="contact_desc">Есть вопросы, предложения или нужна помощь? Заполните форму — мы ответим в течение 24 часов.</p>
+    <h1 data-i18n="contact_title">Контакты</h1>
+    <p data-i18n="contact_desc">Есть вопросы, предложения или нужна помощь? Заполните форму — мы ответим в течение 48 часов.</p>
+    
+    <div class="response-time">
+        <span class="response-time-icon">💬</span>
+        <span data-i18n-html="contact_response_time"><strong>Время ответа:</strong> до 48 часов</span>
+    </div>
     
     <form id="contact-form" onsubmit="return submitForm(event)">
         <div class="form-group">
@@ -80,7 +94,7 @@
     
     <div class="form-success" id="form-success">
         <div style="font-size: 3rem; margin-bottom: 16px;">✅</div>
-        <p data-i18n="contact_success">Сообщение отправлено! Мы ответим в течение 24 часов.</p>
+        <p data-i18n="contact_success">Сообщение отправлено! Мы ответим в течение 48 часов.</p>
     </div>
     
     <a href="../../" class="back-link" data-i18n="back_home">← На главную</a>
@@ -120,6 +134,12 @@ var I18n = {
             var key = el.getAttribute('data-i18n');
             if (ContactTranslations[lang] && ContactTranslations[lang][key]) {
                 el.textContent = ContactTranslations[lang][key];
+            }
+        });
+        document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+            var key = el.getAttribute('data-i18n-html');
+            if (ContactTranslations[lang] && ContactTranslations[lang][key]) {
+                el.innerHTML = ContactTranslations[lang][key];
             }
         });
         document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
@@ -172,8 +192,9 @@ document.addEventListener('click', function(e) {
 
 var ContactTranslations = {
     ru: {
-        contact_title: 'Свяжитесь с нами | Cyber Security PRO',
-        contact_desc: 'Есть вопросы, предложения или нужна помощь? Заполните форму — мы ответим в течение 24 часов.',
+        contact_title: 'Контакты',
+        contact_desc: 'Есть вопросы, предложения или нужна помощь? Заполните форму — мы ответим в течение 48 часов.',
+        contact_response_time: '<strong>Время ответа:</strong> до 48 часов',
         contact_name: 'Имя',
         contact_name_placeholder: 'Ваше имя',
         contact_email: 'Email *',
@@ -184,12 +205,13 @@ var ContactTranslations = {
         contact_message: 'Сообщение *',
         contact_message_placeholder: 'Опишите ваш вопрос...',
         contact_send: 'Отправить сообщение',
-        contact_success: 'Сообщение отправлено! Мы ответим в течение 24 часов.',
+        contact_success: 'Сообщение отправлено! Мы ответим в течение 48 часов.',
         back_home: '← На главную'
     },
     en: {
-        contact_title: 'Contact Us | Cyber Security PRO',
-        contact_desc: 'Have questions, suggestions, or need help? Fill out the form — we\'ll respond within 24 hours.',
+        contact_title: 'Contact',
+        contact_desc: 'Have questions or need help? Fill out the form — we\'ll respond within 48 hours.',
+        contact_response_time: '<strong>Response time:</strong> up to 48 hours',
         contact_name: 'Name',
         contact_name_placeholder: 'Your name',
         contact_email: 'Email *',
@@ -200,8 +222,25 @@ var ContactTranslations = {
         contact_message: 'Message *',
         contact_message_placeholder: 'Describe your question...',
         contact_send: 'Send Message',
-        contact_success: 'Message sent! We\'ll respond within 24 hours.',
+        contact_success: 'Message sent! We\'ll respond within 48 hours.',
         back_home: '← Back to Home'
+    },
+    de: {
+        contact_title: 'Kontakt',
+        contact_desc: 'Haben Sie Fragen? Füllen Sie das Formular aus — wir antworten innerhalb von 48 Stunden.',
+        contact_response_time: '<strong>Antwortzeit:</strong> bis zu 48 Stunden',
+        contact_name: 'Name',
+        contact_name_placeholder: 'Ihr Name',
+        contact_email: 'Email *',
+        contact_email_placeholder: 'ihre@email.de',
+        contact_email_error: 'Gültige Email eingeben',
+        contact_subject: 'Betreff',
+        contact_subject_placeholder: 'Betreff der Nachricht',
+        contact_message: 'Nachricht *',
+        contact_message_placeholder: 'Beschreiben Sie Ihre Frage...',
+        contact_send: 'Nachricht senden',
+        contact_success: 'Nachricht gesendet! Wir antworten innerhalb von 48 Stunden.',
+        back_home: '← Zur Startseite'
     }
 };
 
@@ -236,7 +275,8 @@ async function submitForm(e) {
         honeypot: form.honeypot.value
     };
     
-    btn.textContent = '⏳ ' + (I18n.current === 'ru' ? 'Отправка...' : 'Sending...');
+    var lang = I18n.current;
+    btn.textContent = lang === 'ru' ? '⏳ Отправка...' : (lang === 'de' ? '⏳ Senden...' : '⏳ Sending...');
     btn.disabled = true;
     
     try {
@@ -249,13 +289,13 @@ async function submitForm(e) {
             form.style.display = 'none';
             success.style.display = 'block';
         } else {
-            alert('Ошибка отправки. Попробуйте позже.');
+            alert(lang === 'ru' ? 'Ошибка отправки. Попробуйте позже.' : 'Error sending. Please try again.');
         }
     } catch (err) {
-        alert('Ошибка соединения. Попробуйте позже.');
+        alert(lang === 'ru' ? 'Ошибка соединения.' : 'Connection error.');
     }
     
-    btn.textContent = ContactTranslations[I18n.current].contact_send || 'Send Message';
+    btn.textContent = ContactTranslations[lang].contact_send || 'Send Message';
     btn.disabled = false;
     return false;
 }
