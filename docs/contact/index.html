@@ -369,7 +369,7 @@ async function submitForm(e) {
     btn.disabled = true;
     
     try {
-        var resp = await fetch('../../api/send-message.php', {
+        var resp = await fetch('https://bitcoins-mining.net/cyber-security-api/send-message.php', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(data)
