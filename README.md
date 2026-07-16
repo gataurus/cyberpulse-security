@@ -1,15 +1,15 @@
-# 🛡️ CyberShield Security — WordPress Security Plugin
+# 🛡️ CyberPulse Security — WordPress Security Plugin
 
 **Advanced WordPress protection against bots, vulnerability scanners, brute force attacks, and AI scraping. Multi-layer verification with 20+ detection methods, 10 languages, and real-time dashboard.**
 
-[![Version](https://img.shields.io/badge/version-5.7.9-blue.svg)](https://github.com/gataurus/cybershield-security)
+[![Version](https://img.shields.io/badge/version-5.7.9-blue.svg)](https://github.com/gataurus/cyberpulse-security)
 [![License](https://img.shields.io/badge/license-GPL%20v2-green.svg)](LICENSE)
 [![PHP](https://img.shields.io/badge/PHP-7.4+-purple.svg)](https://php.net)
 [![WordPress](https://img.shields.io/badge/WordPress-5.0+-blue.svg)](https://wordpress.org)
 [![Languages](https://img.shields.io/badge/languages-10-orange.svg)](#-translations)
 
 **Author:** [gataurus](https://github.com/gataurus)  
-**Website:** [CyberShield Security](https://gataurus.github.io/cybershield-security)
+**Website:** [CyberPulse Security](https://gataurus.github.io/cyberpulse-security)
 
 ---
 
@@ -48,13 +48,13 @@
 | Content Security Policy (CSP) | ❌ | ✅ |
 | Force HTTPS | ❌ | ✅ |
 
-**[🔓 Upgrade to PRO](https://gataurus.github.io/cybershield-security/#pricing)** — plans from 990₽/month.
+**[🔓 Upgrade to PRO](https://gataurus.github.io/cyberpulse-security/#pricing)** — plans from 990₽/month.
 
 ---
 
 ## 🌍 Translations
 
-CyberShield Security supports **10 languages**:
+CyberPulse Security supports **10 languages**:
 
 🇷🇺 Russian | 🇬🇧 English | 🇩🇪 German | 🇫🇷 French | 🇮🇹 Italian | 🇪🇸 Spanish | 🇧🇷 Portuguese | 🇨🇳 Chinese | 🇯🇵 Japanese | 🇰🇷 Korean
 
@@ -62,11 +62,11 @@ CyberShield Security supports **10 languages**:
 
 ## 📦 Installation
 
-1. Install from [WordPress.org](https://wordpress.org/plugins/cybershield-security/)
-2. Go to **Plugins → Add New** → search "CyberShield Security"
+1. Install from [WordPress.org](https://wordpress.org/plugins/cyberpulse-security/)
+2. Go to **Plugins → Add New** → search "CyberPulse Security"
 3. Install and activate
-4. Configure via **CyberShield Security** menu in admin panel
-5. To unlock PRO features — [purchase a license](https://gataurus.github.io/cybershield-security/#pricing)
+4. Configure via **CyberPulse Security** menu in admin panel
+5. To unlock PRO features — [purchase a license](https://gataurus.github.io/cyberpulse-security/#pricing)
 
 ---
 
@@ -95,15 +95,15 @@ The plugin is pre-configured for optimal protection:
 
 ## 📊 Documentation
 
-- [Privacy Policy](https://gataurus.github.io/cybershield-security/docs/privacy)
-- [Terms of Service](https://gataurus.github.io/cybershield-security/docs/terms)
-- [Refund Policy](https://gataurus.github.io/cybershield-security/docs/refund)
+- [Privacy Policy](https://gataurus.github.io/cyberpulse-security/docs/privacy)
+- [Terms of Service](https://gataurus.github.io/cyberpulse-security/docs/terms)
+- [Refund Policy](https://gataurus.github.io/cyberpulse-security/docs/refund)
 
 ---
 
 ## 🤝 Contributing
 
-- 🐛 Report bugs via [GitHub Issues](https://github.com/gataurus/cybershield-security/issues)
+- 🐛 Report bugs via [GitHub Issues](https://github.com/gataurus/cyberpulse-security/issues)
 - 💡 Suggest features
 - 🔧 Submit pull requests
 
